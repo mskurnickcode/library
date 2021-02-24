@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="pageContainer">
+        <div class="headerContainer">
+            <header><h2>Bucket It Together</h2></header>
+        </div>
+        <div class="mainContainer">
+            <div class="cardsContainer">
+                <div class="addCard">
+                    <div class="addNewCardContainer">
+                        <button class="addNewObject">
+                            <span>Add New Bucket Item</span>
+                        </button>
+                        <div class="addNewItem">
+                            <form class="newItemForm">
+                                <h3>Add New Item</h3>
+                                <div class="inputs">
+                                    <input class="itemInput" type="text" id="title" placeholder="Title" required/>
+                                    <input class="itemInput" type="text" id="url" placeholder="URL" required/>
+                                    <input class="itemInput" type="text" id="city" placeholder="City" required/>
+                                    <input class="itemInput" type="text" id="country" placeholder="Country" required/>
+                                    <input class="itemInput" type="text" id="hashtag" placeholder="Hashtag" required/>
+                                </div>
+                                <button id="newItemSubmit" type="submit">Submit</button>
+                                <button id="closeForm"> Close </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="existingCards">
+                    </div>
+                </div>
+            </div>
+            <div class="summaryContainer">
+                <div class="summary">
+                    <div class="headerContainer">
+                        <h3>Summary</h3>
+                    </div>
+                    <div class="filtersContainer">
+                        <h4>Filter the Data</h4>
+                        <form class="filtersForm">
+                            <input type="radio" id="titleFilter" name="filter" value="title">
+                            <label for="title">Title</label><br>
+                            <input type="radio" id="countryFilter" name="filter" value="country">
+                            <label for="country">Country</label><br>
+                            <input type="radio" id="hashtag" name="filter" value="hashtag">
+                            <label for="hashtag">Hashtag</label>
+                            <input class="itemInput" type="text" id="filterTerm" placeholder="Input Query" required/>
+                            <button id="itemsFilter" type="submit">Filter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
